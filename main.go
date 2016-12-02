@@ -27,7 +27,9 @@ func init() {
 }
 
 func main() {
+	// Set random Seed
 	rand.Seed(time.Now().UnixNano())
+
 	// Draw from the low deck
 	for i := 1; i < 4; i++ {
 		n := rand.Intn(len(lowDeck))
